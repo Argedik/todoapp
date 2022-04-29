@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapılacaklar Listesi</title>
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+    <header>
+        <h1>Yapılacaklar Listesi</h1>
+        <form id="new-task-form">
+            <input type="text" id="new-task-input" placeholder="Ne yapmak istiyorsun?">
+            <input 
+                type="submit" 
+                id="new-task-submit"                
+                value="Görev ekle"/>
+        </form>
+    </header>
+    <main>
+        <section class="task-list">
+            <h2>Görevler</h2>
+            <div id="tasks">
+                <div class="task">
+                    <div class="content">
+                        <input 
+                            type="text"
+                            class="text"
+                            value="Görevim"
+                            readonly
+                        />
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Ekle</button>
+                        <button class="delete">Kaldır</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -15,7 +15,7 @@ window.addEventListener('load',()=>{
 
         const task_content_el =document.createElement("div");
         task_content_el.classList.add("content");
-        
+
         task_el.appendChild(task_content_el);
         
         const task_input_el= document.createElement("input");
@@ -51,9 +51,15 @@ window.addEventListener('load',()=>{
                 task_input_el.removeAttribute("readonly");
                 task_input_el.focus();
                 task_edit_el.innerText="Kaydet"
+                console.log("kaydet");
+            }else if(task_edit_el.innerText.toLowerCase()=="kaydet"){
+                task_input_el.setAttribute("readonly","readonly");
+                task_edit_el.innerText="Düzenle"
+                console.log("kaydet2");
             }else{
                 task_input_el.setAttribute("readonly","readonly");
                 task_input_el.innerText="Düzenle";
+                console.log("düzenle");
             }
         });
 
